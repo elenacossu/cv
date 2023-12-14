@@ -1,0 +1,314 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Elena}{Cossu}
+
+\position{Senior Evaluation Researcher}
+\address{London, United Kingdom}
+
+\email{\href{mailto:elena.cossu@live.it}{\nolinkurl{elena.cossu@live.it}}}
+\homepage{elenacossu.quarto.pub}
+\github{elenacossu}
+\linkedin{elenacossu}
+\twitter{elle\_cossu}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I am a researcher at SciencesPo Paris and a Senior Policy
+Evaluation Researcher for the National Centre for Social Research (UK).
+I use Natural Language Processing to map and predict political
+configurations using political documents and social media data of
+illiberal governments in Europe (at SciencesPo) and I use
+quasi-experiments or experiments to measure the effect of policies (at
+NatCen). My research focuses on using machine learning, experiments, and
+quasi-experiments to assess causality and predict outcomes in social and
+political settings. I am passionate about everything that is at the
+intersection of data science and social sciences.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {December, 2023}
+    {Elena Cossu~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{employment}{%
+\section{Employment}\label{employment}}
+
+\begin{cventries}
+    \cventry{Senior Evaluation Researcher}{National Centre for Social Research}{London, United Kingdom}{Nov. 2021 - Present}{\begin{cvitems}
+\item Design and implementation of experiments (Randomised Control Trials) and Quasi-Experiments (e.g. Synthetic Control, Propensity Score Matching, etc.) to measure the effect of UK policies on certain segments of the population.
+\item Clients include the UK Ministry of Justice, The National Lottery Community Fund, the UK Department for Education, the Education Endowment Foundation, the Department for Health and Social Care (DHSC), and others.
+\end{cvitems}}
+    \cventry{Postdoctoral Researcher}{SciencesPo Paris}{Paris, France}{Apr. 2023 - Present}{\begin{cvitems}
+\item Researcher for the project “Neo-authoritarianisms in Europe and the liberal democratic response” (AUTHLIB) of the Horizon Europe and funded by the European Commission.
+\item Using Natural Language Processing (NLP) to map political ideological configurations and dimensions across Europe.
+\item Writing high- quality publications, drafting and submission of research reports to the European Commission, and organising social impact activities in co-creation with civil society and institutions in Hungary and at the European level.
+\item Part of the Centre for European Studies and Comparative Politics.
+\end{cvitems}}
+    \cventry{Assistant Lecturer}{Corvinus University of Budapest}{Budapest, Hungary}{Sep. 2021 - Jan. 2022}{\begin{cvitems}
+\item Asssistant teacher for Master level courses.
+\end{cvitems}}
+    \cventry{Early Stage Researcher}{European Commission MSCA}{Budapest and London}{Aug. 2018 - Sep. 2021}{\begin{cvitems}
+\item Researcher as part of the Horizon 2020 European Commission project FATIGUE, a Marie Skłodowska-Curie Innovative Training Network (MSCA)
+\item Assist with the analysis and the writing of reports and articles for long-term research projects
+\item Duty stations for the project: (1) the European Bank for Reconstruction and Development (EBRD), Office of the Chief Economist, Transition Impact and Global Economics Team; (2) University College London (UCL), the Slavonic School of Eastern European Studies (SSEES); (3) Corvinus University of Budapest at the Institute of World Economy.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{PhD in Economics}{Corvinus University of Budapest }{Budapest, Hungary}{Aug. 2018 - Present}{\begin{cvitems}
+\item Everything concluded - currently awaiting for discussion date.
+\item PhD sponsored by the European Commission Marie Skłodowska-Curie Innovative Training Network (MSCA) to be able to work for the FATIGUE research project
+\item Dissertation title: 'Essays on Conceptualising Policies Linked to Populist Rhetoric in Europe and Measuring their Effects in Hungary'
+\end{cvitems}}
+    \cventry{Double Master’s Degree in International Economics and Management}{Bocconi University and SciencesPo Paris}{Milan and Paris}{Aug. 2014 - Apr. 2017}{\begin{cvitems}
+\item MA in International Public Management with a specialisation in Global Risks from SciencesPo Paris School of International Affairs (PSIA), with a final dissertation called «Fighting terrorism and fundamental rights»
+\item MSc in Economics and Management of International and Public Affairs from Bocconi University, with a dissertation called «The Parisian transport system: a best practice of urban mobility»
+\end{cvitems}}
+    \cventry{Bachelor's Degree in Political Science and International Relations}{Università Cattolica del Sacro Cuore}{Milan, Italy}{Sep. 2011 - Oct. 2014}{\begin{cvitems}
+\item Final dissertation: «The Hungarian Transition from Planned to Capitalist Economy»
+\item Erasmus at Pázmány Péter Catholic University in Budapest during the 2013/2014 academic year
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{teaching-experience}{%
+\section{Teaching experience}\label{teaching-experience}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{} Development Economics Seminar (Corvinus University of Budapest)}{}{2018 S2}
+    \cvhonor{}{\textbf{} Global Economic Trends Seminar (Corvinus University of Budapest)}{}{2021 S1}
+    \cvhonor{}{\textbf{} International Organizations and Economic Diplomacy Seminar (Corvinus University of Budapest)}{}{2021 S1}
+\end{cvhonors}
+
+\hypertarget{research-output}{%
+\section{Research output}\label{research-output}}
+
+\hypertarget{peer-reviewed-publications}{%
+\subsection{Peer-Reviewed
+Publications}\label{peer-reviewed-publications}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf {Clustering and Analysing Relevant Policy Dimensions of Populist, Left-Wing, Centrist, and Right-Wing Parties across Europe} \newline {Central European Journal of Public Policy, 17(1), 41–54} \newline \url{https://doi.org/10.2478/cejpp-2023-0004}}{}{2023}
+    \cvhonor{}{\textbf {The Economic Effect Of Populist Rhetoric In Hungary} \newline {Online Journal of Modelling the New Europe, 41, 105–138} \newline \url{https://doi.org/10.24193/OJMNE.2023.41.05}}{}{2023}
+    \cvhonor{}{\textbf {Understanding Contemporary Populism Through the Latin American Experience} \newline {AARMS – Academic and Applied Research in Military and Public Management Science, 20(3), Article 3} \newline \url{https://doi.org/10.32565/aarms.2021.3.4}}{}{2021}
+    \cvhonor{}{\textbf {The Gravity Model for Trade Theory} \newline {Köz-gazdaság, 14(3), Article 3} \newline \url{https://doi.org/10.14267/RETP2019.03.25}}{}{2019}
+\end{cvhonors}
+
+\hypertarget{under-peer-review}{%
+\subsection{Under Peer-Review}\label{under-peer-review}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf {Application of Natural Language Processing to the Electoral Manifestos of Parties Characterised by Populist Rhetoric in Central and Eastern Europe} \newline {East European Journal of Society and Politics} \newline \url{Forthcoming}}{}{2024}
+\end{cvhonors}
+
+\hypertarget{reports}{%
+\subsection{Reports}\label{reports}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf {LNK Educate: Feasibility and pilot study} \newline {Youth Endowement Foundation} \newline \url{https://youthendowmentfund.org.uk/funding/evaluations/lnk-educate/}}{}{2023}
+\end{cvhonors}
+
+\hypertarget{other-publications}{%
+\subsection{Other Publications}\label{other-publications}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf {A Small Country Trying To Go Big, A Big Union Trying Not To Go Small} \newline {Australian Institute of International Affairs} \newline \url{https://www.internationalaffairs.org.au/australianoutlook/a-small-country-trying-to-go-big-a-big-union-trying-not-to-go-small/}}{}{2022}
+    \cvhonor{}{\textbf {Chinese vaccine diplomacy in Latin America could change the international order} \newline {ECPR The Loop} \newline \url{https://theloop.ecpr.eu/chinese-vaccine-diplomacy-in-latin-america-could-change-the-international-order/}}{}{2021}
+    \cvhonor{}{\textbf {Book Review: The Glass Half-Empty: Debunking the Myth of Progress in the Twenty-First Century by Rodrigo Aguilera} \newline {LSE Review of Books} \newline \url{https://blogs.lse.ac.uk/lsereviewofbooks/2020/10/27/book-review-the-glass-half-empty-debunking-the-myth-of-progress-in-the-twenty-first-century-by-rodrigo-aguilera/}}{}{2020}
+\end{cvhonors}
+
+\hypertarget{presentations}{%
+\subsection{Presentations}\label{presentations}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{ECPR General Conference} {Assessing the economic performance of a government characterised by populist rhetoric in Hungary: A synthetic control approach}}{}{2022}
+    \cvhonor{}{\textbf{The Doctoral Student Association of the University of Pécs Conference (PTE DOK)} {Macroeconomics and Politics in Hungary: How an Illiberal Government Characterised by Populist Rhetoric Deals With its Public Budget}}{}{2021}
+    \cvhonor{}{\textbf{inGRID Workshop} {Macroeconomics, Policies, and CEE: a Machine Learning Approach to Social Investment and Social Protection Policies}}{}{2021}
+    \cvhonor{}{\textbf{ASEEES 52nd Annual Convention} {A Review of Quasi-Experimental and Predictive Methodologies in Relation to Measuring Populism and its Outcomes}}{}{2020}
+    \cvhonor{}{\textbf{Science is Wonderful! European Commission Outreach Event} {FATIGUE Project Workshop}}{}{2020}
+    \cvhonor{}{\textbf{WINIR Symposium 2019} {Economic populism, fiscal policies and budget deficits: the sustainability implications for Central and Eastern Europe}}{}{2019}
+    \cvhonor{}{\textbf{RSA Winter Conference} {Present and future populist policies in Europe: the Cases of Hungary and Bulgaria}}{}{2019}
+    \cvhonor{}{\textbf{UACES 49th Annual Conference} {The New Populist Policies Prescriptions}}{}{2019}
+\end{cvhonors}
+
+\hypertarget{relevant-skills}{%
+\section{Relevant Skills}\label{relevant-skills}}
+
+\textbf{Data Analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  Matching Methods (including Mahalanobis matching and Kernel matching)
+\item
+  Propensity Score Weighting (PSW)
+\item
+  Synthetic Control Method (SCM)
+\item
+  Cluster Analysis
+\item
+  Natural Language Processing (NLP)
+\item
+  BERT Modelling
+\item
+  Quantitative Sentiment Analysis
+\item
+  Data Scraping Techniques
+\item
+  Imputation Techniques (K+means and regression analysis inputting)
+\item
+  Randomized Control Trials (RCTs)
+\end{itemize}
+
+\textbf{Programming Languages}:
+
+\begin{itemize}
+\tightlist
+\item
+  R
+\item
+  Python
+\item
+  SQL
+\item
+  command-line programming
+\item
+  Git
+\item
+  STATA
+\item
+  SPSS
+\item
+  HTML
+\item
+  LaTeX
+\end{itemize}
+
+\textbf{Natural Languages}:
+
+\begin{itemize}
+\tightlist
+\item
+  English
+\item
+  French
+\item
+  Italian
+\item
+  Spanish
+\item
+  Hungarian (basic)
+\end{itemize}
+
+\hypertarget{awards-achievements}{%
+\section{Awards \& Achievements}\label{awards-achievements}}
+
+\hypertarget{awards}{%
+\subsection{Awards}\label{awards}}
+
+\begin{cvhonors}
+    \cvhonor{}{ACRI Young Investigator Training Program}{ECOMOD 2021}{2023}
+\end{cvhonors}
+
+\hypertarget{certifications}{%
+\subsection{Certifications}\label{certifications}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Google} {Data Analytics Professional Certificate} \url{https://www.coursera.org/account/accomplishments/verify/XZCBSTWMZ3W4}}{}{2023}
+    \cvhonor{}{\textbf{Office for National Statistics} {Accredited Researcher} \url{}}{}{2022}
+    \cvhonor{}{\textbf{DataCamp} {Data Scientist with R Certificate} \url{https://www.datacamp.com/statement-of-accomplishment/track/6fda0ea43ab0dfbfd376032fd6e1072ca796a097}}{}{2022}
+    \cvhonor{}{\textbf{Centre for Microdata Methods and Practice} {Policy Evaluation Methods} \url{}}{}{2019}
+\end{cvhonors}
+
+
+
+\end{document}

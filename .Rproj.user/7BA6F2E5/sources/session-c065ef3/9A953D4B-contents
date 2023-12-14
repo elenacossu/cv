@@ -1,0 +1,40 @@
+---
+name: Elena
+surname: Cossu
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: "PhD, MA, MSc, BA"
+position: "Senior Evaluation Researcher"
+address: "London, United Kingdom"
+email: "elena.cossu@live.it"
+www: "elenacossu.quarto.pub"
+github: elenacossu
+linkedin: elenacossu
+twitter: elle_cossu
+headcolor: "414141"
+#profilepic: pic.jpeg
+docname: "Cover Letter"
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Cover Letter
+
+Dear Hiring Manager,
+
+I am writing you this letter to apply for the Position X. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing enim eu turpis egestas pretium. Ornare arcu odio ut sem nulla pharetra. Accumsan tortor posuere ac ut consequat semper. Adipiscing tristique risus nec feugiat. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Faucibus et molestie ac feugiat sed lectus vestibulum. Faucibus a pellentesque sit amet porttitor eget. Neque convallis a cras semper auctor neque. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae. Sed felis eget velit aliquet sagittis id consectetur purus ut. Purus non enim praesent elementum. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my qualifications and experiences align with the needs of Company in more detail. Please feel free to contact me at elena.cossu@live.it or +33 6 95 10 79 67 to schedule an interview.
+
+Sincerely,
+
+Elena
+ 

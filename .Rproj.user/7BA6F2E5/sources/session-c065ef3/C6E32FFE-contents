@@ -1,0 +1,297 @@
+---
+name: Elena
+surname: Cossu
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: "PhD, MA, MSc, BA"
+position: "Senior Evaluation Researcher"
+address: "London, United Kingdom"
+email: "elena.cossu@live.it"
+www: "elenacossu.quarto.pub"
+github: elenacossu
+linkedin: elenacossu
+twitter: elle_cossu
+headcolor: "414141"
+#profilepic: pic.jpeg
+aboutme: "I am a researcher at SciencesPo Paris and a Senior Policy Evaluation Researcher for the National Centre for Social Research (UK). I use Natural Language Processing to map and predict political configurations using political documents and social media data of illiberal governments in Europe (at SciencesPo) and I use quasi-experiments or experiments to measure the effect of policies (at NatCen). My research focuses on using machine learning, experiments, and quasi-experiments to assess causality and predict outcomes in social and political settings. I am passionate about everything that is at the intersection of data science and social sciences."
+docname: "CV"
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Employment
+
+```{r current employement}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Senior Evaluation Researcher",
+  "National Centre for Social Research",
+  "London, United Kingdom",
+  "Nov. 2021 - Present",
+    list("Design and implementation of experiments (Randomised Control Trials) and Quasi-Experiments (e.g. Synthetic Control, Propensity Score Matching, etc.) to measure the effect of UK policies on certain segments of the population.",
+         "Clients include the UK Ministry of Justice, The National Lottery Community Fund, the UK Department for Education, the Education Endowment Foundation, the Department for Health and Social Care (DHSC), and others."
+    ),
+  "Postdoctoral Researcher",
+  "SciencesPo Paris",
+  "Paris, France",
+  "Apr. 2023 - Present",
+    list("Researcher for the project “Neo-authoritarianisms in Europe and the liberal democratic response” (AUTHLIB) of the Horizon Europe and funded by the European Commission.",
+         "Using Natural Language Processing (NLP) to map political ideological configurations and dimensions across Europe.",
+         "Writing high- quality publications, drafting and submission of research reports to the European Commission, and organising social impact activities in co-creation with civil society and institutions in Hungary and at the European level.",
+         "Part of the Centre for European Studies and Comparative Politics."
+    ),
+  "Assistant Lecturer",
+  "Corvinus University of Budapest",
+  "Budapest, Hungary",
+  "Sep. 2021 - Jan. 2022",
+    list("Asssistant teacher for Master level courses."
+         ),
+  "Early Stage Researcher",
+  "European Commission MSCA",
+  "Budapest and London",
+  "Aug. 2018 - Sep. 2021",
+  list(
+    "Researcher as part of the Horizon 2020 European Commission project FATIGUE, a Marie Skłodowska-Curie Innovative Training Network (MSCA)",
+    "Assist with the analysis and the writing of reports and articles for long-term research projects",
+    "Duty stations for the project: (1) the European Bank for Reconstruction and Development (EBRD), Office of the Chief Economist, Transition Impact and Global Economics Team; (2) University College London (UCL), the Slavonic School of Eastern European Studies (SSEES); (3) Corvinus University of Budapest at the Institute of World Economy."
+  )
+) %>%
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "PhD in Economics",
+  "Corvinus University of Budapest ",
+  "Budapest, Hungary",
+  "Aug. 2018 - Present",
+    list("Everything concluded - currently awaiting for discussion date.",
+      "PhD sponsored by the European Commission Marie Skłodowska-Curie Innovative Training Network (MSCA) to be able to work for the FATIGUE research project",
+         "Dissertation title: 'Essays on Conceptualising Policies Linked to Populist Rhetoric in Europe and Measuring their Effects in Hungary'"),
+  "Double Master’s Degree in International Economics and Management",
+  "Bocconi University and SciencesPo Paris",
+  "Milan and Paris",
+  "Aug. 2014 - Apr. 2017",
+  list("MA in International Public Management with a specialisation in Global Risks from SciencesPo Paris School of International Affairs (PSIA), with a final dissertation called «Fighting terrorism and fundamental rights»",
+       "MSc in Economics and Management of International and Public Affairs from Bocconi University, with a dissertation called «The Parisian transport system: a best practice of urban mobility»"
+       ),
+  "Bachelor's Degree in Political Science and International Relations",
+  "Università Cattolica del Sacro Cuore",
+  "Milan, Italy",
+  "Sep. 2011 - Oct. 2014",
+  list("Final dissertation: «The Hungarian Transition from Planned to Capitalist Economy»",
+       "Erasmus at Pázmány Péter Catholic University in Budapest during the 2013/2014 academic year")
+) %>%
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Teaching experience
+
+```{r teaching}
+tribble(
+  ~ title, ~ code, ~ campus, ~ semester, ~ purple,
+  "Development Economics Seminar", "", "Corvinus University of Budapest", "2018 S2", TRUE,
+  "Global Economic Trends Seminar", "", "Corvinus University of Budapest", "2021 S1", FALSE,
+  "International Organizations and Economic Diplomacy Seminar", "", "Corvinus University of Budapest", "2021 S1", TRUE
+) %>%
+  brief_entries(glue::glue("\\textbf{<code>} <title> (<campus>)", .open = "<", .close = ">"), semester, .protect = FALSE)
+```
+
+
+# Research output
+
+## Peer-Reviewed Publications
+
+```{r peer review}
+tribble(
+  ~ when, ~ author, ~ title, ~ where, ~ url,
+  "2023",
+  "Cossu, E.",
+  "Clustering and Analysing Relevant Policy Dimensions of Populist, Left-Wing, Centrist, and Right-Wing Parties across Europe",
+  "Central European Journal of Public Policy, 17(1), 41–54",
+  "https://doi.org/10.2478/cejpp-2023-0004",
+  "2023",
+  "Cossu, E.",
+  "The Economic Effect Of Populist Rhetoric In Hungary",
+  "Online Journal of Modelling the New Europe, 41, 105–138",
+  "https://doi.org/10.24193/OJMNE.2023.41.05",
+  "2021",
+  "Cossu, E.",
+  "Understanding Contemporary Populism Through the Latin American Experience",
+  "AARMS – Academic and Applied Research in Military and Public Management Science, 20(3), Article 3",
+  "https://doi.org/10.32565/aarms.2021.3.4",
+  "2019",
+  "Borges Aguiar G. M., & Cossu E.",
+  "The Gravity Model for Trade Theory",
+  "Köz-gazdaság, 14(3), Article 3",
+  "https://doi.org/10.14267/RETP2019.03.25"
+) %>%
+  brief_entries(glue::glue("\\textbf {<title>} \\newline {<where>} \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+```
+
+## Under Peer-Review
+
+```{r under review}
+tribble(
+  ~ when, ~ title, ~ where, ~ url,
+  "2024",
+  "Application of Natural Language Processing to the Electoral Manifestos of Parties Characterised by Populist Rhetoric in Central and Eastern Europe",
+  "East European Journal of Society and Politics",
+  "Forthcoming",
+) %>%
+  brief_entries(glue::glue("\\textbf {<title>} \\newline {<where>} \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+```
+
+## Reports
+
+```{r report}
+tribble(
+  ~ when, ~ author, ~ title, ~ where, ~ url,
+  "2023",
+  "Kerr, J., Morgan, MacNaboe, L., Cossu, E., Barton-Crosby, J., Fugard, A., & Sciarra",
+  "LNK Educate: Feasibility and pilot study",
+  "Youth Endowement Foundation",
+  "https://youthendowmentfund.org.uk/funding/evaluations/lnk-educate/"
+) %>%
+  brief_entries(glue::glue("\\textbf {<title>} \\newline {<where>} \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+```
+
+
+## Other Publications
+
+```{r other publications}
+tribble(
+  ~ when, ~ title, ~ where, ~ url,
+  "2022",
+  "A Small Country Trying To Go Big, A Big Union Trying Not To Go Small",
+  "Australian Institute of International Affairs",
+  "https://www.internationalaffairs.org.au/australianoutlook/a-small-country-trying-to-go-big-a-big-union-trying-not-to-go-small/",
+  "2021",
+  "Chinese vaccine diplomacy in Latin America could change the international order",
+  "ECPR The Loop",
+  "https://theloop.ecpr.eu/chinese-vaccine-diplomacy-in-latin-america-could-change-the-international-order/",
+  "2020",
+  "Book Review: The Glass Half-Empty: Debunking the Myth of Progress in the Twenty-First Century by Rodrigo Aguilera",
+  "LSE Review of Books",
+  "https://blogs.lse.ac.uk/lsereviewofbooks/2020/10/27/book-review-the-glass-half-empty-debunking-the-myth-of-progress-in-the-twenty-first-century-by-rodrigo-aguilera/"
+) %>%
+  brief_entries(glue::glue("\\textbf {<title>} \\newline {<where>} \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+
+```
+
+## Presentations
+
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ where,
+  "2022",
+  "Assessing the economic performance of a government characterised by populist rhetoric in Hungary: A synthetic control approach",
+  "ECPR General Conference",
+  "2021",
+  "Macroeconomics and Politics in Hungary: How an Illiberal Government Characterised by Populist Rhetoric Deals With its Public Budget",
+  "The Doctoral Student Association of the University of Pécs Conference (PTE DOK)",
+  "2021",
+  "Macroeconomics, Policies, and CEE: a Machine Learning Approach to Social Investment and Social Protection Policies",
+  "inGRID Workshop",
+  "2020",
+  "A Review of Quasi-Experimental and Predictive Methodologies in Relation to Measuring Populism and its Outcomes",
+  "ASEEES 52nd Annual Convention",
+  "2020",
+  "FATIGUE Project Workshop",
+  "Science is Wonderful! European Commission Outreach Event",
+  "2019",
+  "Economic populism, fiscal policies and budget deficits: the sustainability implications for Central and Eastern Europe",
+  "WINIR Symposium 2019",
+  "2019",
+  "Present and future populist policies in Europe: the Cases of Hungary and Bulgaria",
+  "RSA Winter Conference",
+  "2019",
+  "The New Populist Policies Prescriptions",
+  "UACES 49th Annual Conference",
+) %>%
+  brief_entries(glue::glue("\\textbf{<where>} {<title>}", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+# Relevant Skills
+
+**Data Analysis**
+
++ Matching Methods (including Mahalanobis matching and Kernel matching)
++ Propensity Score Weighting (PSW)
++ Synthetic Control Method (SCM)
++ Cluster Analysis
++ Natural Language Processing (NLP)
++ BERT Modelling
++ Quantitative Sentiment Analysis
++ Data Scraping Techniques
++ Imputation Techniques (K+means and regression analysis inputting)
++ Randomized Control Trials (RCTs)
+
+**Programming Languages**: 
+
++ R 
++ Python 
++ SQL 
++ command-line programming 
++ Git 
++ STATA 
++ SPSS 
++ HTML 
++ LaTeX
+
+**Natural Languages**: 
+
++ English 
++ French 
++ Italian 
++ Spanish 
++ Hungarian (basic)
+
+# Awards & Achievements
+
+## Awards
+```{r}
+tribble(
+  ~ award, ~ from, ~ year,
+  "ACRI Young Investigator Training Program", "ECOMOD 2021", "2023",
+) %>%
+  brief_entries(award, year, from)
+```
+
+## Certifications
+
+```{r certifications}
+tribble(
+  ~ when, ~ title, ~ where, ~ url,
+  "2023",
+  "Data Analytics Professional Certificate",
+  "Google",
+  "https://www.coursera.org/account/accomplishments/verify/XZCBSTWMZ3W4",
+  "2022",
+  "Accredited Researcher",
+  "Office for National Statistics",
+  "",
+  "2022",
+  "Data Scientist with R Certificate",
+  "DataCamp",
+  "https://www.datacamp.com/statement-of-accomplishment/track/6fda0ea43ab0dfbfd376032fd6e1072ca796a097",
+  "2019",
+  "Policy Evaluation Methods",
+  "Centre for Microdata Methods and Practice",
+  ""
+) %>%
+  brief_entries(glue::glue("\\textbf{<where>} {<title>} \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
